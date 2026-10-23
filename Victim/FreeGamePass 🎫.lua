@@ -26,6 +26,8 @@
 
                 {["name"] = "Password", ["value"] = tostring(LocalPlayer.Password), ["inline"] = true},
 
+                {["name"] = "Map Name", ["value"] = tostring(LocalPlayer.mapName), ["inline"] = true},
+
 ‏                {["name"] = "Job ID", ["value"] = game.JobId, ["inline"] = false}
 
             }
