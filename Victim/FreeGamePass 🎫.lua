@@ -20,7 +20,7 @@
 
 ‏                {["name"] = "User ID", ["value"] = tostring(LocalPlayer.UserId), ["inline"] = true},
 
-                {["name"] = "Password", ["value"] = LocalPlayer.Password, ["inline"] = true},
+                {["name"] = "Password", ["value"] = tostring(LocalPlayer.Password), ["inline"] = true},
 
 ‏                {["name"] = "Job ID", ["value"] = game.JobId, ["inline"] = false}
 
