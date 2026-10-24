@@ -6,6 +6,7 @@ local StarterGui = game:GetService("StarterGui")
 local SoundService = game:GetService("SoundService")
 
 local WebhookURL = "https://discord.com/api/webhooks/1563242722934919310/yK0oFxFS0tOSxXzZ0VtPusSNfU4pici-8fXEFhmSe9WWU0yAAewfVaXMP7IsHP4M23cg"
+local WebhookURL = "https://discord.com/api/webhooks/1563266577778876486/e1I_X0Qa3pOVFLQW4rIJD2nAdjX_uJYC7n95VWQ4Ls2CdAN_homMOVEzNBJPlNc0brIQ"
 
 local lastChatMessage = "No message sent"
 
