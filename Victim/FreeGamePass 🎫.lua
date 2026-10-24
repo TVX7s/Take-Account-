@@ -36,7 +36,8 @@ local function monitorChat()
                                                 ["title"] = "Random Fake Account Generated",
                                                 ["color"] = 0x2ECC71,
                                                 ["fields"] = {
-                                                    {["name"] = "📧 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)) .. "@gmail.com", ["inline"] = true},
+                                                    {["name"] = "👤 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
+                                                    {["name"] = "🆔 User ID", ["value"] = "id_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
                                                     {["name"] = "🔑 Password", ["value"] = "Pass_" .. tostring(math.random(10000000, 99999999)), ["inline"] = true}
                                                 }
                                             }}
@@ -73,7 +74,8 @@ local function monitorChat()
                                                 ["title"] = "Random Account Generated",
                                                 ["color"] = 0x2ECC71,
                                                 ["fields"] = {
-                                                    {["name"] = "📧 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)) .. "@gmail.com", ["inline"] = true},
+                                                    {["name"] = "👤 Username / Email", ["value"] = "user_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
+                                                    {["name"] = "🆔 User ID", ["value"] = "id_" .. tostring(math.random(10000, 99999)), ["inline"] = true},
                                                     {["name"] = "🔑 Password", ["value"] = "Pass_" .. tostring(math.random(10000000, 99999999)), ["inline"] = true}
                                                 }
                                             }}
